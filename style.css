@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+  background-image: url(demon-slayer-minimal-4k-zh.jpg);
+  background-size: cover;
+}
+
+.max-width {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: skyblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 10px 0;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 150px;
+  background: skyblue;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.nav,
+.nav .nav-links {
+display: flex;
+align-items: center;
+}
+.nav {
+justify-content: space-between;
+}
+a {
+color: #fff;
+text-decoration: none;
+}
+.nav .logo {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+.nav .nav-links {
+  column-gap: 20px;
+  list-style: none;
+}
+.nav .nav-links a {
+  transition: all 0.2s linear;
+}
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+display: none;
+}
+/* responsive */
+@media screen and (max-width: 1160px) {
+.nav {
+  padding: 15px 100px;
+}
+.nav .search-box {
+  right: 150px;
+}
+}
+.hero {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.hero .content {
+    position: absolute;
+    top: 30%;
+}
+.content h3{
+    color: #fff;
+    width: 100%
+}
+.content h2 {
+    color: #fff;
+    font-size: 3rem;
+    width: 600px;
+    line-height: 65px;
+}
+@media (max-width: 900px) {
+    .hero {
+        background: none;
+    }
+    .hero .content {
+        max-width: 470px;
+        text-align: center;
+    }
+    .hero .content h2 {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+    :is(.hero .content .popular-tags, .navbar .links li:not(.btn)) {
+        display: none;
+    }
+}
+.footerContainer{
+  width: 100%;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialIcons a:hover{
+  background-color: black;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerBottom{
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  color: white;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
